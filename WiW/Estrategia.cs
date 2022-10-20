@@ -7,9 +7,19 @@ namespace tpfinal
 {
 	class Estrategia
 	{
+//		a medida que se va respondiendo y el sistema descarta lo falso,  imprime las posibles predicciones  que quedan en el arbol.
 		public String Consulta1(ArbolBinario<DecisionData> arbol)
 		{
-			string resutl = "Implementar consulta1";
+			string resutl = "";
+//			si el nodo es hoja, retorna la prediccion.
+			if (arbol.esHoja()) {
+				resutl = arbol.getDatoRaiz().ToString();
+				return resutl;
+			}
+// 			si no es hoja
+			resutl += Consulta1(arbol.getHijoDerecho());// consulta al hijoDerecho, en busca de la prediccion/nodo-hoja
+			resutl += Consulta1(arbol.getHijoIzquierdo());// consulta al hijoIzquierdo, en busca de la prediccion/nodo-hoja
+			
 			return resutl;
 		}
 
