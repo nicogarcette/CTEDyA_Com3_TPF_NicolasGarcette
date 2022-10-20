@@ -43,11 +43,43 @@ namespace tpfinal
 		
 		public String Consulta3(ArbolBinario<DecisionData> arbol)
 		{
+			Cola<ArbolBinario<DecisionData>> c = new Cola<ArbolBinario<DecisionData>>();
+			ArbolBinario<DecisionData> aux ;
+			int contNiv = 0;
+			bool paso = false; // bool para verificar que el lvl no se imprima duplicado
+			c.encolar(arbol);
+			c.encolar(null);
+			
 			string result = "";
+			
+			while (!c.esVacia()) {
+				aux = c.desencolar();
+					
+				if (aux == null) {
+					contNiv++;
+					paso = false;
+					
+					if(!c.esVacia())
+						c.encolar(null);
+				}else{
+					
+					if (!paso) {
+						result += "\nNivel: "+contNiv +"\n";
+						paso = true;
+					}
+					
+					result += aux.getDatoRaiz().ToString();
+				
+					if (aux.getHijoDerecho() != null) {
+						c.encolar(aux.getHijoDerecho());
+					}
+					if (aux.getHijoIzquierdo() != null) {
+						c.encolar(aux.getHijoIzquierdo());
+					}
+				}
+			}
 			return result;
 		}
-		
-		
 		
 //		el clasificador le pasa como parametro a desicionData  Pregunta o Prediccion.
 		public ArbolBinario<DecisionData> CrearArbol(Clasificador clasificador)
