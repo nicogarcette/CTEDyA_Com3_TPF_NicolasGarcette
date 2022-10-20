@@ -13,7 +13,7 @@ namespace tpfinal
 			string resutl = "";
 //			si el nodo es hoja, retorna la prediccion.
 			if (arbol.esHoja()) {
-				resutl = arbol.getDatoRaiz().ToString();
+				resutl = arbol.getDatoRaiz().ToString() + "\n";
 				return resutl;
 			}
 // 			si no es hoja
@@ -23,16 +23,27 @@ namespace tpfinal
 			return resutl;
 		}
 
-
+//		retorna todos los caminos hacia la prediccion.
 		public String Consulta2(ArbolBinario<DecisionData> arbol)
 		{
-			string resutl = "Implementar consulta2";
+			string resutl = "";
+			
+			if (arbol.esHoja()) {
+				resutl = arbol.getDatoRaiz().ToString();
+				return resutl;
+			}
+			
+			resutl += arbol.getDatoRaiz().ToString();
+			
+			resutl += Consulta2(arbol.getHijoIzquierdo());
+			resutl += Consulta2(arbol.getHijoDerecho());
+			
 			return resutl;
 		}
 		
 		public String Consulta3(ArbolBinario<DecisionData> arbol)
 		{
-			string result = "Implementar consulta3";
+			string result = "";
 			return result;
 		}
 		

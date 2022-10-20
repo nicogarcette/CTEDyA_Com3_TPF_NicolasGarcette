@@ -13,7 +13,7 @@ namespace tpfinal
 		}
 		
 		private  Dictionary<string, int> predictions;
-		public Dictionary<string, int> Predictions {
+		public Dictionary<string, int> Predictions  {
 			get {
 				return predictions;
 			}
