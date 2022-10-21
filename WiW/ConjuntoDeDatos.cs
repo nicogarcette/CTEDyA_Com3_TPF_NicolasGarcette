@@ -56,10 +56,9 @@ namespace tpfinal
 			}
 			
 		}
-//		sin parametros
+//		se crea el conjunto sin parametros. es el que se encarga de obtener las preguntas y cargarlas.
 		public ConjuntoDeDatos()
 		{
-//			toda esta creacion no la entiendo. la 
 			filas = new List<IList<string>>();
 
 			using (var stream = File.OpenRead(Utils.get_path_preguntas()))

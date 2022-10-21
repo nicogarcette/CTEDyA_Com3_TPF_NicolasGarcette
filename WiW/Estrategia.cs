@@ -23,24 +23,37 @@ namespace tpfinal
 			return resutl;
 		}
 
+//		se crea una lista para que los datos del los nodos persistan.Ademas se le pasa la posicion.
+		public String Consulta2(ArbolBinario<DecisionData> arbol){
+			List<string> lista = new List<string>();
+			int len = 0;
+			return Consulta2(arbol,lista,len);
+		}
+		
+		
 //		retorna todos los caminos hacia la prediccion.
-		public String Consulta2(ArbolBinario<DecisionData> arbol)
+		private String Consulta2(ArbolBinario<DecisionData> arbol, List<string> lista, int pos)
 		{
 			string resutl = "";
 			
+			lista.Insert(pos,arbol.getDatoRaiz().ToString());// se guarda el dato
+			pos++;// se incrementa la posicion para el siguiente elemento
+			
 			if (arbol.esHoja()) {
-				resutl = arbol.getDatoRaiz().ToString();
+//				se guardo los resultados de la lista hasta la posicion.
+				for (int i = 0; i < pos; i++) {
+					resutl += lista[i] + " | ";
+				}
+				
 				return resutl;
 			}
 			
-			resutl += arbol.getDatoRaiz().ToString();
+			resutl += Consulta2(arbol.getHijoIzquierdo(),lista,pos) + "\n";
+			resutl += Consulta2(arbol.getHijoDerecho(),lista,pos)+ "\n";
 			
-			resutl += Consulta2(arbol.getHijoIzquierdo());
-			resutl += Consulta2(arbol.getHijoDerecho());
-			
-			return resutl;
+
+			return resutl; // ahora si funca
 		}
-		
 		public String Consulta3(ArbolBinario<DecisionData> arbol)
 		{
 			Cola<ArbolBinario<DecisionData>> c = new Cola<ArbolBinario<DecisionData>>();
@@ -108,7 +121,7 @@ namespace tpfinal
 //				se llama a crearArbol para que retorne el arbol del nodo izq
 				ArbolBinario<DecisionData> hijoDer = this.CrearArbol(derecho);
 				
-//				se agregan los hijos a la raiz.
+//				se agregan los hijos a la raiz.no llega hasta que se completen los subArboles,cuando esten completos se agregan
 				arbol.agregarHijoDerecho(hijoDer);
 				arbol.agregarHijoIzquierdo(hijoIzq);
 				
