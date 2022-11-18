@@ -63,7 +63,7 @@ namespace WiW
             this.textBox1.ForeColor = System.Drawing.Color.White;
             this.textBox1.Location = new System.Drawing.Point(9, 6);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(80, 22);
+            this.textBox1.Size = new System.Drawing.Size(80, 25);
             this.textBox1.TabIndex = 1;
             this.textBox1.Text = "Consultas";
             // 
@@ -71,7 +71,7 @@ namespace WiW
             // 
             this.btnclose.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnclose.Image = ((System.Drawing.Image)(resources.GetObject("btnclose.Image")));
-            this.btnclose.Location = new System.Drawing.Point(763, 4);
+            this.btnclose.Location = new System.Drawing.Point(963, 4);
             this.btnclose.Name = "btnclose";
             this.btnclose.Size = new System.Drawing.Size(25, 25);
             this.btnclose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -95,10 +95,11 @@ namespace WiW
             // 
             this.txt_datos.Location = new System.Drawing.Point(12, 21);
             this.txt_datos.Name = "txt_datos";
-            this.txt_datos.Size = new System.Drawing.Size(776, 431);
+            this.txt_datos.Size = new System.Drawing.Size(976, 631);
             this.txt_datos.TabIndex = 3;
             this.txt_datos.Text = "";
             this.txt_datos.WordWrap = false;
+            this.txt_datos.Font = new System.Drawing.Font("Segoe UI", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             // 
             // button2
             // 
@@ -106,7 +107,7 @@ namespace WiW
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(748, 469);
+            this.button2.Location = new System.Drawing.Point(948, 669);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(40, 34);
             this.button2.TabIndex = 2;
@@ -118,7 +119,7 @@ namespace WiW
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 550);
+            this.ClientSize = new System.Drawing.Size(1000, 750);
             this.Controls.Add(this.caras);
             this.Controls.Add(this.barra);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;

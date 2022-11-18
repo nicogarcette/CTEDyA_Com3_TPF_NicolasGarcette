@@ -326,7 +326,7 @@ namespace WiW
             // caras
             // 
             this.caras.AutoScroll = true;
-            this.caras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.caras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.caras.Controls.Add(this.panel7);
             this.caras.Dock = System.Windows.Forms.DockStyle.Fill;
             this.caras.Location = new System.Drawing.Point(276, 35);

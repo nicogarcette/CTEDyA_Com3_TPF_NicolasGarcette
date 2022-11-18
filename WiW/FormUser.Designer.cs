@@ -76,7 +76,7 @@ namespace WiW
             // caras
             // 
             this.caras.AutoScroll = true;
-            this.caras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(66)))), ((int)(((byte)(82)))));
+            this.caras.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(32)))), ((int)(((byte)(40)))));
             this.caras.Controls.Add(this.panel1);
             this.caras.Controls.Add(this.answerPanel);
             this.caras.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -101,13 +101,13 @@ namespace WiW
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label1.Font = new System.Drawing.Font("Reboto", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(3, 6);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(340, 37);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Seleccione su Personaje...";
+            this.label1.Text = "SELECCIONE SU PERSONAJE...";
             // 
             // panel13
             // 
@@ -122,7 +122,7 @@ namespace WiW
             this.button2.FlatAppearance.BorderSize = 0;
             this.button2.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(80)))), ((int)(((byte)(200)))));
             this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.button2.Font = new System.Drawing.Font("Reboto", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
             this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -130,7 +130,7 @@ namespace WiW
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(181, 38);
             this.button2.TabIndex = 2;
-            this.button2.Text = " Aceptar";
+            this.button2.Text = " ACEPTAR";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 

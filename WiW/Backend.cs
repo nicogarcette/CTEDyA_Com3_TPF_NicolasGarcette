@@ -10,32 +10,19 @@ namespace tpfinal
 	{
 		private static ArbolBinario<DecisionData> arbol, init_arbol;
 		private static ConjuntoDeDatos datasetEntrenamiento;
-		private static Estrategia estrategia= new Estrategia();
+		private static Estrategia estrategia = new Estrategia();
 		private static List<Pregunta> pregunta_usuario = new List<Pregunta>();
 		private static List<string> respuesta_usuario = new List<string>();
 		private static string nombre_seleccionado;
 		private static int pregunta_seleccionada;
 
-        
-        public static List<Pregunta> Pregunta_usuario
-	    {
-        	get {
-        		return pregunta_usuario;
-        	}
-	        set
-	        {
-	            pregunta_usuario = value;
-	        }
+        public static List<Pregunta> Pregunta_usuario{
+        	get { return pregunta_usuario; }
+	      	set { pregunta_usuario = value; }
 	    }
         public static List<string> Respuesta_usuario { 
-        	get 
-        	{ 
-        		return respuesta_usuario; 
-        	}
-        	set 
-        	{ 
-        		respuesta_usuario = value;
-        	}
+        	get { return respuesta_usuario; }
+        	set { respuesta_usuario = value; }
        	}
         public static string Nombre_seleccionado { 
         	get { return nombre_seleccionado;}
@@ -57,7 +44,6 @@ namespace tpfinal
 			pregunta_seleccionada = rnd.Next(1, datasetEntrenamiento.cantidadFilas());
 
 			nombre_seleccionado = datasetEntrenamiento.obtenerEtiquetaFila(pregunta_seleccionada);
-
 
 			HashSet<string> set = new HashSet<string>();
 			IList<IList<string>> rows = datasetEntrenamiento.Filas;
@@ -88,20 +74,15 @@ namespace tpfinal
 							if (val.Equals(rows[pregunta_seleccionada][col]))
 							{
 								Respuesta_usuario.Add("si");
-
 							}
 							else
 							{
 								Respuesta_usuario.Add("no");
 							}
 						}
-
 					}
-
 				}
-
 			}
-
 		}
 	
 		public static string getPregunta()
@@ -135,7 +116,6 @@ namespace tpfinal
 			return estrategia.Consulta1(arbol);
 		}
 		//Imprimir las preguntas con sus respuestas hasta llegar a una prediccion, pasando como parametro el conjunto de caracteristicas.
-
 		public static string caminoAPrediccion()
 		{
 			return estrategia.Consulta2(arbol);
@@ -152,13 +132,11 @@ namespace tpfinal
 		{
 //			tengo que crear un arbol. el parametro dataset(conjuntoDeDatos) crea un clasificador y lo pasa como parametro
 			return estrategia.CrearArbol(new Clasificador(dataset));
-
 		}
 
 		//Probar el arbol de decision con un conjunto de prueba
 		public static void evaluar_respuesta(bool valor)
 		{
-
 			if (valor && arbol != null)
 			{
 				arbol = arbol.getHijoIzquierdo();

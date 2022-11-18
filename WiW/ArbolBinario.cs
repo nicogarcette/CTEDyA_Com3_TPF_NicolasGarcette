@@ -44,23 +44,5 @@ namespace tp2
 			return this.hijoIzquierdo==null && this.hijoDerecho==null;
 		}
 		
-		public void inorden() {
-		}
-		
-		public void preorden() {
-		}
-		
-		public void postorden() {
-		}
-		
-		public void recorridoPorNiveles() {
-		}
-	
-		public int contarHojas() {
-			return 0;
-		}
-		
-		public void recorridoEntreNiveles(int n,int m) {
-		}
 	}
 }
