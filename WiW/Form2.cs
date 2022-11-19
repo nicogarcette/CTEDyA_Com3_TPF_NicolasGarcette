@@ -75,10 +75,10 @@ namespace WiW
             this.Parent.Dispose();
             tpfinal.Backend.reset();
             this.Close();
-            Inicio inicio = new Inicio();
-            inicio.Show();
-            
-         
+            //se intercambio el back inicio por un back a seleccion de personaje
+            Form1 juego = new Form1();
+            FormUser select = new FormUser(juego, true);
+            select.Show();
         }
 
         private void panel12_Paint(object sender, PaintEventArgs e)

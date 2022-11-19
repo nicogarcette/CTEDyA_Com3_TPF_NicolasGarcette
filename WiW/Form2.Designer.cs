@@ -113,7 +113,7 @@ namespace WiW
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(197, 30);
             this.button7.TabIndex = 11;
-            this.button7.Text = "Inicio";
+            this.button7.Text = "Jugar";
             this.button7.UseVisualStyleBackColor = false;
             this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
