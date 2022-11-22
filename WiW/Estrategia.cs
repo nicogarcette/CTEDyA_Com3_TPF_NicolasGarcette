@@ -15,10 +15,15 @@ namespace tpfinal
 			if (arbol.esHoja()) {
 				return arbol.getDatoRaiz() + "\n";
 			}
-// 			si no es hoja, se busca en los hijos
-			resutl += Consulta1(arbol.getHijoDerecho());// consulta al hijoDerecho.
-			resutl += Consulta1(arbol.getHijoIzquierdo());// consulta al hijoIzquierdo.
 			
+// 			si no es hoja, se busca en los hijos
+			if (arbol.getHijoIzquierdo() != null) {
+				resutl += Consulta1(arbol.getHijoIzquierdo());// consulta al hijoIzquierdo.
+			}
+			if (arbol.getHijoDerecho() != null) {	
+				resutl += Consulta1(arbol.getHijoDerecho());// consulta al hijoDerecho.
+			}
+
 			return resutl;
 		}
 
@@ -39,10 +44,14 @@ namespace tpfinal
 				}
 				return resutl;
 			}
-			 
-			resutl += Consulta2(arbol.getHijoIzquierdo(),lista) + "\n";
+			
+			if (arbol.getHijoIzquierdo() != null) {
+				resutl += Consulta2(arbol.getHijoIzquierdo(),lista) + "\n";	
+			}
 			lista.RemoveAt(lista.Count -1);
-			resutl += Consulta2(arbol.getHijoDerecho(),lista)+ "\n";
+			if (arbol.getHijoDerecho() != null) {
+				resutl += Consulta2(arbol.getHijoDerecho(),lista)+ "\n";
+			}
 			
 			return resutl;
 		}
