@@ -42,16 +42,17 @@ namespace tpfinal
 				foreach (var ele in lista) {
 					resutl += ele + " | ";
 				}
-				return resutl;
+				return resutl + "\n";
 			}
 			
 			if (arbol.getHijoIzquierdo() != null) {
-				resutl += Consulta2(arbol.getHijoIzquierdo(),lista) + "\n";	
+				resutl += Consulta2(arbol.getHijoIzquierdo(),lista);	
 			}
 			lista.RemoveAt(lista.Count -1);
 			if (arbol.getHijoDerecho() != null) {
-				resutl += Consulta2(arbol.getHijoDerecho(),lista)+ "\n";
+				resutl += Consulta2(arbol.getHijoDerecho(),lista);
 			}
+			lista.RemoveAt(lista.Count -1);
 			
 			return resutl;
 		}

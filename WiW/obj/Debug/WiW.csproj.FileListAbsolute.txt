@@ -10,3 +10,27 @@ C:\Users\nico\Desktop\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.Inicio.res
 C:\Users\nico\Desktop\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.csproj.GenerateResource.Cache
 C:\Users\nico\Desktop\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.exe
 C:\Users\nico\Desktop\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.pdb
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\bin\Debug\WiW.exe.config
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\bin\Debug\WiW.exe
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\bin\Debug\WiW.pdb
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.csprojResolveAssemblyReference.cache
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.Form1.resources
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.Form2.resources
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.Consultas.resources
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.FormUser.resources
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.Inicio.resources
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.csproj.GenerateResource.Cache
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.exe
+C:\Users\nico\Documents\Unaj\2022\2 cuatri\CTEDyA\TrabajoFinalCTEDyA\TpConSharp\WiW\obj\Debug\WiW.pdb
+C:\Users\nico\Desktop\TpConSharp\WiW\bin\Debug\WiW.exe.config
+C:\Users\nico\Desktop\TpConSharp\WiW\bin\Debug\WiW.exe
+C:\Users\nico\Desktop\TpConSharp\WiW\bin\Debug\WiW.pdb
+C:\Users\nico\Desktop\TpConSharp\WiW\obj\Debug\WiW.csprojResolveAssemblyReference.cache
+C:\Users\nico\Desktop\TpConSharp\WiW\obj\Debug\WiW.Form1.resources
+C:\Users\nico\Desktop\TpConSharp\WiW\obj\Debug\WiW.Form2.resources
+C:\Users\nico\Desktop\TpConSharp\WiW\obj\Debug\WiW.Consultas.resources
+C:\Users\nico\Desktop\TpConSharp\WiW\obj\Debug\WiW.FormUser.resources
+C:\Users\nico\Desktop\TpConSharp\WiW\obj\Debug\WiW.Inicio.resources
+C:\Users\nico\Desktop\TpConSharp\WiW\obj\Debug\WiW.csproj.GenerateResource.Cache
+C:\Users\nico\Desktop\TpConSharp\WiW\obj\Debug\WiW.exe
+C:\Users\nico\Desktop\TpConSharp\WiW\obj\Debug\WiW.pdb
